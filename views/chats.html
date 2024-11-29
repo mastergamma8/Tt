@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TTH Messenger - Чаты</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="chats-container">
+        <h2>Чаты</h2>
+        <div class="search-bar">
+            <input type="text" placeholder="Поиск">
+        </div>
+        <div class="chat-list">
+            <div class="chat-item">
+                <div class="chat-photo"></div>
+                <div class="chat-name">Название</div>
+            </div>
+        </div>
+        <div class="bottom-menu">
+            <a href="/contacts">Контакты</a>
+            <a href="/chats" class="active">Чаты</a>
+            <a href="/settings">Настройки</a>
+        </div>
+    </div>
+</body>
+</html>
